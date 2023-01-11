@@ -1,0 +1,34 @@
+<?php
+
+// exemplo simples de for
+for($i = 0; $i < 10; $i++){
+	echo "$i <br>";
+}
+
+echo '<br>';
+
+// exemplo usando incremento diferente de 1
+for($j = 0; $j < 100; $j += 5){
+	echo "$j<br>";
+}
+
+echo '<br>';
+
+// exemplo usando o continue e o break
+for($j = 0; $j < 100; $j += 5){
+	if($j > 20 && $j < 60) continue;
+	
+	if($j > 80) break;
+	
+	echo "$j<br>";
+}
+
+echo '<br>';
+
+// exemplo usando decremento
+for($i = date('Y'); $i > date('Y') - 100; $i--){
+	echo "$i<br>";
+}
+
+?>
+
